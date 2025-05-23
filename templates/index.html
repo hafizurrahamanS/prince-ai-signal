@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prince Quotex Signal</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: white;
+            font-family: Arial;
+            text-align: center;
+            padding-top: 50px;
+        }
+        .signal {
+            padding: 20px;
+            margin: 30px auto;
+            width: 300px;
+            border-radius: 10px;
+            font-size: 24px;
+        }
+        .green { background-color: #2ecc71; }
+        .purple { background-color: #9b59b6; }
+        .gray { background-color: #7f8c8d; }
+    </style>
+</head>
+<body>
+    <h1>👑 Prince Quotex Signal</h1>
+    <div class="signal {{ signal.color }}">
+        {{ signal.label }} <br>
+        🕒 {{ signal.time }}
+    </div>
+    <p>🔄 Refresh this page for new signal</p>
+</body>
+</html>
